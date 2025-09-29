@@ -11,6 +11,8 @@ A aplicação atualmente possui as seguintes funcionalidades:
 * **Ordenação dinâmica da lista de filmes**: É possível reordenar a lista clicando nos cabeçalhos das colunas **Título** (Movie Title) e **Data de Lançamento** (Release Date).
 * **Destaque visual (highlight)**: A coluna que está sendo usada para a ordenação é destacada visualmente para melhor feedback ao usuário.
 
+Para implementar essas funcionalidades, utilizou-se o modelo MVC (Model, View, Controller), em que os modelos representam os dados e os métodos, as visões são a interface com o usuário e o controlador é responsável pela intermediação da comunicação entre os modelos e as visões. Adotou-se essa abordagem para melhorar a experiência do usuário e melhorar a segurança no acesso aos dados.
+
 ## Tecnologias Utilizadas
 * **Ruby on Rails**: Framework principal da aplicação.
 * **Ruby**: Linguagem de programação base.
