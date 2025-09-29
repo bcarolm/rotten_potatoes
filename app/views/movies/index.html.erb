@@ -3,10 +3,21 @@
 <%= link_to 'Add Movie', new_movie_path, :class => 'btn btn-primary' %>
 
 <div id="movies">
+  <%#
   <div class="row">
     <div class="col-8">Movie Title</div>
     <div class="col-2">Rating</div>
     <div class="col-2">Release Date</div>
+  </div>
+  %>
+  <div class="row">
+    <div class="col-8 <%= 'hilite' if @sort_column == 'title' %>">
+      <%= link_to 'Movie Title', movies_path(sort_by: 'title'), id: 'title_header' %>
+    </div>
+    <div class="col-2">Rating</div>
+    <div class="col-2 <%= 'hilite' if @sort_column == 'release_date' %>">
+      <%= link_to 'Release Date', movies_path(sort_by: 'release_date'), id: 'release_date_header' %>
+    </div>
   </div>
   <%- @movies.each do |movie| %>
     <div class="row">

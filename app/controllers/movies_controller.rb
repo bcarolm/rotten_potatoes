@@ -1,6 +1,8 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all
+    # @movies = Movie.all
+    @sort_column = params[:sort_by]
+    @movies = Movie.order(@sort_column)
   end
   def show
     id = params[:id]            # retrieve movie ID from URI route

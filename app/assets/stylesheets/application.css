@@ -8,3 +8,8 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+.hilite {
+  background-color: yellow;
+  font-weight: bold;
+}
